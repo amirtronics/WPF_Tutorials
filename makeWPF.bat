@@ -2,8 +2,8 @@
 setlocal enabledelayedexpansion
 
 for /f "delims=" %%a in ('wmic OS Get localdatetime ^| find "."') do set datetime=%%a
-set folderName=VideoProcessor
-set projectName=VideoProcessor
+set folderName=Ep12
+set projectName=WPFTutorial
 
 mkdir %folderName%
 cd %folderName%
