@@ -1,20 +1,18 @@
-@echo off
-
 set repo_path=C:\Work\Codes\HMI\VS\WPF_Tutorials
-set file_name=App.xaml.cs
-set file_path=.\Ep19_ShowDialog\WPFTutorial\%file_name%
+set file_name=NormalWindow.xaml.cs
+set file_path=.\Ep19_ShowDialog\WPFTutorial\View\%file_name%
 
-set commit_message=Create Ep18 %file_name%
+set commit_message=Create Ep19 View %file_name%
 
 echo %file_name%
 echo %file_path%
 echo %commit_message%
 
-REM cd %repo_path%
+cd %repo_path%
 
-REM git add %file_path%
+git add %file_path%
 
-REM git commit -m "%commit_message%"
-REM git push origin master
+git commit -m "%commit_message%"
+git push
 
 echo Commit and Push Complete!
